@@ -11,6 +11,8 @@
       <change afterPath="$PROJECT_DIR$/week06/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/week06/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/week06/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week06/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week06/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/week06/gradlew" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/week06/gradlew.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/week06/settings.gradle" afterDir="false" />
@@ -302,7 +304,7 @@
       <workItem from="1777109594597" duration="35401000" />
       <workItem from="1777452563290" duration="1945000" />
       <workItem from="1777774119576" duration="4000000" />
-      <workItem from="1777813815978" duration="18205000" />
+      <workItem from="1777813815978" duration="18527000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
