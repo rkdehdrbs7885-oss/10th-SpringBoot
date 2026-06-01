@@ -119,26 +119,5 @@ public class SecurityConfig {
         return new OAuthSuccessHandler(jwtUtil);
     }
 
-    @Bean
-    public OpenAPI openAPI() {
-        // 🔄 1. 토큰 입력받을 보안 요구사항(자물쇠 버튼) 명칭 정의
-        String securityJwtName = "JWT Bearer Token";
-        SecurityRequirement securityRequirement = new SecurityRequirement().addList(securityJwtName);
 
-        // 🔄 2. Swagger가 헤더(Authorization)에 Bearer 토큰을 찌를 수 있도록 규격 컴포넌트 세팅
-        io.swagger.v3.oas.models.Components components = new io.swagger.v3.oas.models.Components()
-                .addSecuritySchemes(securityJwtName, new SecurityScheme()
-                        .name(securityJwtName)
-                        .type(SecurityScheme.Type.HTTP) // HTTP 방식
-                        .scheme("bearer")               // bearer 자동 완성 레이아웃 유도
-                        .bearerFormat("JWT"));          // 표기 스펙 규정
-
-        return new OpenAPI()
-                .info(new Info()
-                        .title("UMC 10th Project API")
-                        .description("미션 프로젝트 API 문서")
-                        .version("v1.0.0"))
-                .addSecurityItem(securityRequirement) // 🔄 요구사항 추가
-                .components(components);             // 🔄 컴포넌트 등록
-    }
 }
